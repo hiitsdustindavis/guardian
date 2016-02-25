@@ -4,6 +4,21 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+nav {
+  position: relative; }
+
+nav ul {
+  position: absolute; }
+
+nav ul:last-child {
+  position: absolute;
+  top: 300px; }
+
+li {
+  list-style: none;
+  float: left;
+  margin: 0em 1em; }
+
 header {
   width: 100%;
   height: 20em;
@@ -450,14 +465,6 @@ a {
 body {
   color: #222222;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-
-li {
-  list-style: none;
-  float: left; }
-
-header nav ul:last-child {
-  position: absolute;
-  bottom: 0px; }
 
 div {
   height: 20em;
