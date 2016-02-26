@@ -10,24 +10,103 @@
 @import "base/_index.scss";
 
 
-
-div {
-  height: 20em;
-  text-align: left;
-  padding: 1em;
+a {
+  text-decoration: none;
+  color: $gray-prim;
 }
-
-.column-topstory, .column-secondary, .a, .b, .c, .d, .e, .f, .g, .h {
-    background: $amethyst-prim;
+.topstory, .secondary, .a, .b, .c, .d, .e, .f, .g, .h {
+    background: $white-smoke;
+    font-family: serif;
+    color: $gray-prim;
     // width: 100px;
-    height: 20em;
-    border: 1px solid salmon;
-    margin: 1em
+    // border: 1px solid salmon;
+    // margin: 1em
 }
 
-div.column-topstory {
-  @include span-columns(6);
+@media screen and (max-width: 400px) {
+  ul {
+    padding: 0.5em;
+  }
+  #bottom li:nth-child(n+6) {
+    visibility: hidden;
+  }
+  header, nav {
+    padding: 0;
+  }
+
+  img {
+    max-width: 374px;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    margin: 0;
+    padding: 5px;
+  }
+
+  %first-two {
+    color: #438cf0;
+  }
+
+  %comment {
+    i.fa-comment {
+      font-size: 0.8rem;
+      color: lighten($gray-prim, 30%);
+    }
+    a {
+      font-size: 0.8rem;
+      color: lighten($gray-prim, 30%);
+    }
+
+  }
+
+  %story {
+    padding: 0 0 0 0.5em;
+    font-size: 0.9em;
+    p {
+      color: black;
+      margin: 0 0 1em 0;
+    }
+    border-top: 1px solid $med-turqoise;
+      span {
+        @extend %first-two;
+      }
+  }
+
+  .topstory {
+    color: lighten($gray-prim, 30%);
+    margin: 0 0 .5em 0;
+      p {
+        margin: 0 0 0 10px;
+        @extend %comment;
+      }
+      span {
+        @extend %first-two;
+      }
+
+  }
+
+  .secondary {
+    // height: 8em;
+    margin: 0 0 .5em 0;
+    @extend %comment;
+    @extend %story;
+  }
+
+  .a, .b, .c, .d, .e, .f, .g, .h {
+    // height: 6em;
+    margin: 0 0 .5em 0;
+    @extend %comment;
+    @extend %story;
+  }
+
+
 }
-div.column-secondary {
-  @include span-columns(5);
-}
+// div.column-topstory {
+//   @include span-columns(6);
+//   @include omega();
+// }
+// div.column-secondary {
+//   @include span-columns(5);
+//   @include omega();
+// }

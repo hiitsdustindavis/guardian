@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Sassy Guardian</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul id="top">
           <li>sign in</li>
           <li>subscribe</li>
           <li>sriracha</li>
           <li>jobs</li>
           <li>US edition</li>
         </ul>
-        <ul>
-          <li>home</li>
+        <ul id="bottom">
+          <li><i class="fa fa-home"></i></li>
           <li>election 2016</li>
           <li>US</li>
           <li>world</li>
@@ -32,46 +33,57 @@
           <li>environment</li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <span><i class="fa fa-bars"></i></span>
+      </div>
     </header>
-    <div class="main">
+    <div class="container">
       <section class="row1">
-        <div class="column-topstory">
-          <p>Top Story</p>
-        </div>
-        <div class="column-secondary">
+        <article class="topstory">
+          <img src="img/topstory.jpg" alt="" />
+          <p><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p><i class="fa fa-comment"></i><a href="#">345</a></p>
+        </article>
+        <article class="secondary">
           <p>Secondary Story</p>
-        </div>
+          <p><i class="fa fa-comment"></i><a href="#"> 67</a></p>
+        </article>
       </section>
 
       <section class="row2">
-        <div class="a">
-          <p>A</p>
+        <div class="story a">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <i class="fa fa-comment"></i><a href="#"> 345</a>
         </div>
-        <div class="b">
-          <p>B</p>
+        <div class="story b">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 43</a></p>
         </div>
-        <div class="c">
-          <p>C</p>
+        <div class="story c">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 67</a></p>
         </div>
-        <div class="d">
-          <p>D</p>
+        <div class="story d">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 978</a></p>
         </div>
-        <div class="e">
-          <p>E</p>
+        <div class="story e">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 2</a></p>
         </div>
-        <div class="f">
-          <p>F</p>
+        <div class="story f">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 234</a></p>
         </div>
-        <div class="g">
-          <p>G</p>
+        <div class="story g">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> numberwang</a></p>
         </div>
-        <div class="h">
-          <p>H</p>
+        <div class="story h">
+          <p><span>dolor sit</span> amet, consectetur adipisicing elit</p>
+          <p><i class="fa fa-comment"></i><a href="#"> 90</a></p>
         </div>
-        </section>
-
-      </div>
+      </section>
     </div>
-
   </body>
 </html>

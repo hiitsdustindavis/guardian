@@ -12,17 +12,27 @@ nav ul {
 
 nav ul:last-child {
   position: absolute;
-  top: 300px; }
+  top: 125px; }
+
+.hamburger {
+  background: #333333;
+  color: white;
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: 135px;
+  right: 5px; }
 
 li {
   list-style: none;
   float: left;
-  margin: 0em 1em; }
+  margin: 0em 0.6em; }
 
 header {
+  position: relative;
   width: 100%;
-  height: 20em;
-  background: #9966CC; }
+  height: 10em;
+  background: #005689; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -466,31 +476,67 @@ body {
   color: #222222;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-div {
-  height: 20em;
-  text-align: left;
-  padding: 1em; }
+li {
+  font-size: 0.9em;
+  color: white;
+  font-family: serif; }
 
-.column-topstory, .column-secondary, .a, .b, .c, .d, .e, .f, .g, .h {
-  background: #9966CC;
-  height: 20em;
-  border: 1px solid salmon;
-  margin: 1em; }
+a {
+  text-decoration: none;
+  color: #333333; }
 
-div.column-topstory {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-  div.column-topstory:last-child {
-    margin-right: 0; }
+.topstory, .secondary, .a, .b, .c, .d, .e, .f, .g, .h {
+  background: #f6f6f6;
+  font-family: serif;
+  color: #333333; }
 
-div.column-secondary {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%; }
-  div.column-secondary:last-child {
-    margin-right: 0; }
+@media screen and (max-width: 400px) {
+  ul {
+    padding: 0.5em; }
+
+  #bottom li:nth-child(n+6) {
+    visibility: hidden; }
+
+  header, nav {
+    padding: 0; }
+
+  img {
+    max-width: 374px;
+    margin: 0;
+    padding: 0; }
+
+  .container {
+    margin: 0;
+    padding: 5px; }
+
+  .secondary span, .a span, .b span, .c span, .d span, .e span, .f span, .g span, .h span, .topstory span {
+    color: #438cf0; }
+
+  .topstory p i.fa-comment, .secondary i.fa-comment, .a i.fa-comment, .b i.fa-comment, .c i.fa-comment, .d i.fa-comment, .e i.fa-comment, .f i.fa-comment, .g i.fa-comment, .h i.fa-comment {
+    font-size: 0.8rem;
+    color: gray; }
+  .topstory p a, .secondary a, .a a, .b a, .c a, .d a, .e a, .f a, .g a, .h a {
+    font-size: 0.8rem;
+    color: gray; }
+
+  .secondary, .a, .b, .c, .d, .e, .f, .g, .h {
+    padding: 0 0 0 0.5em;
+    font-size: 0.9em;
+    border-top: 1px solid #4bc6df; }
+    .secondary p, .a p, .b p, .c p, .d p, .e p, .f p, .g p, .h p {
+      color: black;
+      margin: 0 0 1em 0; }
+
+  .topstory {
+    color: gray;
+    margin: 0 0 .5em 0; }
+    .topstory p {
+      margin: 0 0 0 10px; }
+
+  .secondary {
+    margin: 0 0 .5em 0; }
+
+  .a, .b, .c, .d, .e, .f, .g, .h {
+    margin: 0 0 .5em 0; } }
 
 /*# sourceMappingURL=application.css.map */

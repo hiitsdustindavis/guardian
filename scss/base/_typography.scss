@@ -5,3 +5,9 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+li {
+  font-size: 0.9em;
+  color: $white;
+  font-family: serif;
+}
